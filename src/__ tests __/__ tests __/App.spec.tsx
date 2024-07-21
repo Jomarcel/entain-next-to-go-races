@@ -16,6 +16,7 @@ describe(App, () => {
     const totalCategories = resolvedDataKeys
       .map((key) => mockData.race_summaries[key].length)
       .reduce((acc, val) => (acc += val));
+
     expect(mockData).toEqual(mockRaceSummaries);
     expect(totalCategories).toEqual(5);
   });
@@ -41,6 +42,7 @@ describe(App, () => {
       expect(queryByRole("progressbar")).not.toBeInTheDocument();
     });
     const heading = getByRole("heading", { name: "Next to Go" }).textContent;
+
     expect(heading).toBe("Next to Go");
   });
 });
