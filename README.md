@@ -4,20 +4,34 @@
 
 1. Clone the repo https://github.com/Jomarcel/entain-next-to-go-races.git
 
-`$ git clone git@github.com:Jomarcel/entain-next-to-go-races.git`
+```sh
+git clone git@github.com:Jomarcel/entain-next-to-go-races.git`
+```
 
 2. Switch to correct node version (21.6.1)
 
-`$ nvm use`
+```sh
+nvm use
+```
 
 2. Install dependencies
 
-`$ npm install`
+```sh
+npm install
+```
 
-## Dev server
+## Local Dev server
 
-`$ npm run dev`
+```sh
+npm run dev
+```
+
+```sh
+http://localhost:5173/
+```
 
 ## Run tests
 
-`$ npm run test`
+```sh
+npm run test
+```
