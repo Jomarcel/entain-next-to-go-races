@@ -6,6 +6,7 @@ const PageBanner = () => {
       sx={{
         width: "100vw",
         objectFit: "cover",
+        height: '30vh',
         mb: 5,
       }}
       component="img"
