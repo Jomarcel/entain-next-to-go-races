@@ -22,7 +22,7 @@ interface IProps {
   raceSummaryState: RaceSummaryTableState;
 }
 
-const FilterCategory: FC<IProps> = ({ dispatch, raceSummaryState }) => {
+export const FilterCategory: FC<IProps> = ({ dispatch, raceSummaryState }) => {
   const handleCategoryChange = (event: SelectChangeEvent) => {
     dispatch({
       type: RaceSummaryActionTypes.SET_CATEGORY,
@@ -62,4 +62,3 @@ const FilterCategory: FC<IProps> = ({ dispatch, raceSummaryState }) => {
   );
 };
 
-export default FilterCategory;

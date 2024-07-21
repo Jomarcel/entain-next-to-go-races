@@ -27,7 +27,7 @@ interface IProps {
   totalPages: number;
 }
 
-const RaceSummaryTable: FC<IProps> = ({
+export const RaceSummaryTable: FC<IProps> = ({
   dispatch,
   isLoading,
   races,
@@ -54,7 +54,7 @@ const RaceSummaryTable: FC<IProps> = ({
           {!isLoading && (
             <TableBody>
               {races.map((race: RaceSummary) => (
-                <TableRow data-testid={'race-row'} key={race.race_id}>
+                <TableRow data-testid={"race-row"} key={race.race_id}>
                   <TableCell>{race.meeting_name}</TableCell>
                   <TableCell>{race.race_number}</TableCell>
                   <TableCell>
@@ -75,7 +75,6 @@ const RaceSummaryTable: FC<IProps> = ({
               {isLoading && <LoadingTableItems numberOfRows={10} />}
             </TableBody>
           )}
-
         </Table>
       </TableContainer>
       <GenericTablePagination
@@ -87,5 +86,3 @@ const RaceSummaryTable: FC<IProps> = ({
     </>
   );
 };
-
-export default RaceSummaryTable;

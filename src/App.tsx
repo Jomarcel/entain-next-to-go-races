@@ -1,19 +1,16 @@
-import { Box, Container, Typography } from "@mui/material";
+import { Container, Typography } from "@mui/material";
 import { useQuery } from "@tanstack/react-query";
 import { FC, useReducer } from "react";
 import { RaceSummary } from "./types/race-summaries";
 import { enqueueSnackbar } from "notistack";
-import { ErrorMessage } from "./components/error-message";
 import {
   InitialRaceSummaryState,
   RaceSummaryReducer,
 } from "./reducers/raceSummaryReducer";
-import RaceSummaryTable from "./components/RaceSummaryTable/RaceSummaryTable";
 import { getPageIndices } from "./utils/get-page-indices";
-import FilterCategory from "./components/FilterCategory/FilterCategory";
-import LoadingIndicator from "./components/LoadingIndicator/loading-indicator";
 import { categorisedRaceSummaries } from "./utils/format-race-summary";
 import { getRaceSummaries } from "./api";
+import { PageBanner, FilterCategory, LoadingIndicator, RaceSummaryTable, ErrorMessage } from "./components";
 
 const App: FC = () => {
   const [RaceSummaryState, dispatch] = useReducer(
@@ -75,14 +72,7 @@ const App: FC = () => {
 
   return (
     <>
-      <Box
-        sx={{
-          width: "100vw",
-          height: "10vh",
-          backgroundColor: "#D32123",
-          mb: 5,
-        }}
-      ></Box>
+      <PageBanner />
       <Container>
         <Typography variant="h4" align="center">
           Next to Go

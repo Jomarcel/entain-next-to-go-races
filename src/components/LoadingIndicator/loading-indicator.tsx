@@ -1,6 +1,6 @@
 import { CircularProgress, Stack } from "@mui/material";
 
-const LoadingIndicator = () => {
+export const LoadingIndicator = () => {
   return (
     <Stack m={3} alignItems="center" spacing={5}>
       {" "}
@@ -8,5 +8,3 @@ const LoadingIndicator = () => {
     </Stack>
   );
 };
-
-export default LoadingIndicator;

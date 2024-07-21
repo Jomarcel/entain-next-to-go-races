@@ -1,6 +1,6 @@
 import { enqueueSnackbar } from "notistack";
 import { useEffect } from "react";
-import { ErrorMessage } from "../components/error-message";
+import { ErrorMessage } from "../components";
 
 interface ErrorNotification {
   isError: boolean;
