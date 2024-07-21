@@ -38,8 +38,7 @@ export const FilterCategory: FC<IProps> = ({ dispatch, raceSummaryState }) => {
         align="center"
         gutterBottom
       >
-        {" "}
-        Category Filter:{" "}
+        Category Filter
       </Typography>
       <Select
         data-testid="category-filter"
