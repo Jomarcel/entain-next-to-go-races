@@ -2,7 +2,7 @@
 
 ## Project Setup
 
-1. Clone the repo https://github.com/Jomarcel/entain-next-to-go-races.git
+1. Clone the repo git@github.com:Jomarcel/entain-next-to-go-races.git
 
 ```sh
 git clone git@github.com:Jomarcel/entain-next-to-go-races.git`
