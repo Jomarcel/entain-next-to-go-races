@@ -1,4 +1,4 @@
-# Entain Next to Go Races
+# Next to Go Races
 
 ## Project Setup
 
